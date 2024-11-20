@@ -1,0 +1,19 @@
+.fa-lg{
+    margin-right: 10px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.help-block{
+    color:rgb(250, 141, 159);
+}
+
+.select2-container{
+    z-index:100000;
+}
+
+th,td {
+    word-wrap: break-word;
+}
