@@ -1,4 +1,4 @@
-a@extends('layouts.main_layout')
+@extends('layouts.main_layout')
 
 @section('container')
     <div class="container mt-3">
@@ -28,13 +28,17 @@ a@extends('layouts.main_layout')
                                     <td style='text-align:right'>{{ $i }}</td>
 
                                     <td>
-                                        <div style='display:flex;'>
-                                            <div style='margin:0 auto;'>
-                                                <img src="{{ $calon_tenaga_kesehatan->foto_profil == 'assets/img/avatars/user.png' ? asset($calon_tenaga_kesehatan->foto_profil) : asset('storage/' . $calon_tenaga_kesehatan->foto_profil) }}"
-                                                    alt="user-avatar" class="d-block rounded" height="100" width="100">
-                                            </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="{{ $calon_tenaga_kesehatan->foto_profil && $calon_tenaga_kesehatan->foto_profil != 'assets/img/avatars/user.png'
+                                                        ? asset('storage/' . $calon_tenaga_kesehatan->foto_profil)
+                                                        : asset('assets/img/avatars/user.png') }}"
+                                                alt="Foto {{ $calon_tenaga_kesehatan->nama ?? 'Calon Tenaga Kesehatan' }}"
+                                                class="d-block rounded img-fluid"
+                                                height="100" width="100"
+                                                onerror="this.src='{{ asset('assets/img/avatars/user.png') }}';">
                                         </div>
                                     </td>
+
 
                                     <td style="text-align: center;">
                                         {{ $calon_tenaga_kesehatan->nama }}
@@ -115,7 +119,7 @@ a@extends('layouts.main_layout')
                                             onclick='show_faskes({{ $calon_tenaga_kesehatan->id }})'>
                                             <i class='fa fa-file' style='color:#3c8dbc;'></i>
                                         </button>
-                                    </td>
+                                    </td>      
 
                                     <td style="text-align: center;">
                                         Tunggu Respon

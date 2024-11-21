@@ -55,10 +55,11 @@
                             </div>
 
                             <div class="mb-3">
-                                <button class="btn btn-primary d-grid w-100" type="submit"
-                                    id="btn_register">Register</button>
+                                <button class="btn btn-primary d-grid w-100" type="submit" id="btn_register">Register</button>
                             </div>
-
+                            <div class="mb-3">
+                                <p class="text-center">Sudah punya akun? <a href="/login" class="btn btn-link">Login</a></p>
+                            </div>
                         </form>
 
                     </div>
@@ -67,6 +68,8 @@
             </div>
         </div>
     </div>
+
+
 
     <script>
         $('#username').keyup(function() {

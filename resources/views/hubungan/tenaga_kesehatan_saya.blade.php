@@ -26,13 +26,17 @@
                                     <td style='text-align:right'>{{ $loop->iteration }}</td>
 
                                     <td>
-                                        <div style='display:flex;'>
-                                            <div style='margin:0 auto;'>
-                                                <img src="{{ $tenaga_kesehatan_saya->foto_profil == 'assets/img/avatars/user.png' ? asset($tenaga_kesehatan_saya->foto_profil) : asset('storage/' . $tenaga_kesehatan_saya->foto_profil) }}"
-                                                    alt="user-avatar" class="d-block rounded" height="100" width="100">
-                                            </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="{{ $tenaga_kesehatan_saya->foto_profil && $tenaga_kesehatan_saya->foto_profil != 'assets/img/avatars/user.png'
+                                                        ? asset('storage/' . $tenaga_kesehatan_saya->foto_profil)
+                                                        : asset('assets/img/avatars/user.png') }}"
+                                                alt="Foto {{ $tenaga_kesehatan_saya->nama ?? 'Tenaga Kesehatan' }}"
+                                                class="d-block rounded img-fluid"
+                                                height="100" width="100"
+                                                onerror="this.src='{{ asset('assets/img/avatars/user.png') }}';">
                                         </div>
                                     </td>
+
 
                                     <td style="text-align: center;">
                                         {{ $tenaga_kesehatan_saya->nama }}
