@@ -35,7 +35,7 @@
                                 <button class="btn btn-primary d-grid w-100" type="submit">Login</button>
                             </div>
                             <div class="mb-3">
-                                belum punya akun?
+                                belum punya akun ya?
                                 <br>
                                 <a href="/register">Register</a>
                             </div>
