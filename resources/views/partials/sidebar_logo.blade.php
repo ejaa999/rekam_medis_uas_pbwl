@@ -1,6 +1,5 @@
 <div class="app-brand demo">
     <a href="#" class="app-brand-link">
-        {{-- <img src="{{ asset('logo.png') }}" alt="" style="max-width: 50px; max-height:50px;"> --}}
         <span class="app-brand-text demo menu-text fw-bolder" style="text-transform: none;">Rekam Medisku</span>
     </a>
 
