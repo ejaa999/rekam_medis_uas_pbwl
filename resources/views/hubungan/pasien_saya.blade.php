@@ -27,7 +27,7 @@
 
                                     <td style='display:flex;'>
                                         <div style='margin:0 auto;'>
-                                            <img src="{{ $pasien_saya->foto_profil == 'assets/img/avatars/user.png' ? asset($pasien_saya->foto_profil) : asset('storage/' . $pasien_saya->foto_profil) }}"
+                                            <img src="{{ $pasien_saya->foto_profil == 'assets/img/avatars/user.png'? asset($pasien_saya->foto_profil) : asset('assets/img/avatars/user.png' . $pasien_saya->foto_profil) }}"
                                                 alt="user-avatar" class="d-block rounded" height="100" width="100">
                                         </div>
                                     </td>

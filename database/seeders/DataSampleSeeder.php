@@ -25,6 +25,7 @@ class DataSampleSeeder extends Seeder
 
         $admin = User::create([
             'username' => 'admin',
+            'foto_profil' => 'assets/img/avatars/user.png',
             'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
             'nama' => 'Admin Web',
             'no_hp' => '08123456789',
@@ -37,6 +38,7 @@ class DataSampleSeeder extends Seeder
         for($i = 0 ; $i < 5 ; $i++){
             $dokter = User::create([
                 'username' => $faker->username,
+                'foto_profil' => 'assets/img/avatars/user.png',
                 'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
                 'nama' => $faker->name,
                 'no_hp' => '08123456789',
@@ -50,6 +52,7 @@ class DataSampleSeeder extends Seeder
         for($i = 0 ; $i < 5 ; $i++){
             $pengobat_tradisional = User::create([
                 'username' => $faker->username,
+                'foto_profil' => 'assets/img/avatars/user.png',
                 'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
                 'nama' => $faker->name,
                 'no_hp' => '08123456789',
@@ -67,6 +70,7 @@ class DataSampleSeeder extends Seeder
 
             $pasien = User::create([
                 'username' => $faker->username,
+                'foto_profil' => 'assets/img/avatars/user.png',
                 'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
                 'nama' => $nama,
                 'no_hp' => '08123456789',

@@ -18,6 +18,7 @@ class UserSeeder extends Seeder
     {
         $admin = User::create([
             'username' => 'admin',
+            'foto_profil' => 'assets/img/avatars/user.png',
             'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
             'nama' => 'Admin Web',
             'no_hp' => '082129696162',
@@ -26,6 +27,7 @@ class UserSeeder extends Seeder
 
         $dokter = User::create([
             'username' => 'dokter',
+            'foto_profil' => 'assets/img/avatars/user.png',
             'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
             'nama' => 'Dr. Abidzar',
             'no_hp' => '08123456789',
@@ -34,6 +36,7 @@ class UserSeeder extends Seeder
 
         $pengobat_tradisional = User::create([
             'username' => 'pengobat_tradisional',
+            'foto_profil' => 'assets/img/avatars/user.png',
             'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
             'nama' => 'Bapak Gatot',
             'no_hp' => '08123456789',
@@ -42,6 +45,7 @@ class UserSeeder extends Seeder
 
         $pasien = User::create([
             'username' => 'pasien',
+            'foto_profil' => 'assets/img/avatars/user.png',
             'password' => '$2y$10$tCZBMwJ3jifT20k/n3EI2.F3BUSf4hpXVmI4uKFggpLfBo8qJ0Awi',
             'nama' => 'Pasien',
             'no_hp' => '08123456789',
